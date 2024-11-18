@@ -1,0 +1,352 @@
+/* Configuración base y fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #E0E0E0;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+a {
+  text-decoration: none;
+  color: #A5D6A7; /* Verde suave */
+}
+
+a:hover {
+  color: #7CB342; /* Verde más oscuro */
+}
+
+/* Banner principal */
+.banner {
+  background: url('banner.jpeg') center/cover no-repeat;
+  height: 260px;
+  position: relative;
+}
+
+/* Sección del perfil */
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Asegura que el contenido comience desde la izquierda */
+  padding: 2rem 1rem;
+  background-color: #1a1a1a; /* Mismo fondo que la página */
+  border-bottom: 2px solid #223030; /* Línea separadora */
+}
+
+.profile-picture {
+  flex-shrink: 0; /* Evita que la imagen se reduzca */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: url('icon.jpeg') center/cover;
+  border: 3px solid #E0E0E0;
+  margin-right: 1.5rem; /* Espacio entre la imagen y el texto */
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column; /* Asegura que el texto fluya hacia abajo */
+  justify-content: center; /* Centra verticalmente el contenido */
+  text-align: left; /* Alinea el texto a la izquierda dentro del contenedor */
+}
+
+.profile-info h1 {
+  font-size: 1.5rem;
+  color: #FFFFFF; /* Blanco */
+  margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+  font-size: 1rem;
+  color: #FFFFFF; /* Blanco */
+  margin: 0.5rem 0;
+}
+
+/* Sección de habilidades */
+.about-me {
+  padding: 2rem;
+  background-color: #222;
+  border-top: 2px solid #A5D6A7;
+  border-bottom: 2px solid #A5D6A7;
+}
+
+.about-me h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #A5D6A7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-me-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.about-me-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: left; /* Alineación izquierda para el texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid #A5D6A7; /* Línea verde suave */
+  transition: transform 0.3s, background 0.3s;
+  max-width: 305px; /* Para un tamaño uniforme */
+}
+
+.about-me-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.about-me-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #E0E0E0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-me-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-me-box li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #A5D6A7;
+  line-height: 1.5;
+}
+
+.about-me-box strong {
+  color: #E0E0E0;
+}
+
+.main-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.link-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.link-box:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sección de proyectos */
+.projects {
+  padding: 2rem;
+  border-top: 2px solid #A5D6A7; /* Línea superior verde */
+  border-bottom: 2px solid #A5D6A7; /* Línea inferior verde */
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #A5D6A7; /* Verde suave */
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 30%; /* Ajusta para mostrar tres cuadros */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background 0.3s;
+  border: 1px solid #A5D6A7; /* Borde decorativo verde */
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.project-banner1 {
+  width: 100%;
+  height: 150px;
+  background: url(p1.png); /*imagen */
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+.project-banner2 {
+  width: 100%;
+  height: 150px;
+  background: url(p2.png); /*imagen */
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+.project-banner3 {
+  width: 100%;
+  height: 150px;
+  background: url(p3.jpeg); /*imagen */
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+.project-item h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #FFFFFF; /* Verde suave */
+  text-transform: uppercase;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #A5D6A7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  color: #7CB342;
+}
+
+/* Sección de contacto */
+.contact {
+  padding: 2rem;
+  background-color: #222; /* Fondo oscuro */
+  border-top: 2px solid #A5D6A7; /* Línea superior verde */
+  border-bottom: 2px solid #A5D6A7; /* Línea inferior verde */
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #A5D6A7; /* Verde suave */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 0.5rem;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* Adaptable para pantallas pequeñas */
+}
+
+.contact-box {
+  background: linear-gradient(135deg, #333, #444); /* Gradiente */
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #A5D6A7;
+}
+
+.contact-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.contact-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #E0E0E0; /* Blanco suave */
+  text-transform: uppercase;
+}
+
+.contact-box p {
+  font-size: 1rem;
+  color: #A5D6A7; /* Verde suave */
+  line-height: 1.5;
+}
+
+.contact-box a {
+  color: #A5D6A7;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-box a:hover {
+  color: #7CB342; /* Verde más intenso */
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-icon {
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  background-color: rgba(24, 24, 24, 0.3);
+  color: #B0B0B0;
+  border-top: 2px solid #223030;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-picture {
+    margin-bottom: 1rem;
+  }
+
+  .project-item {
+    width: 100%;
+  }
+
+  .main-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .skill-box {
+    width: 100%; /* Ocupa toda la fila en pantallas pequeñas */
+  }
+
+  .contact-box,
+  .project-item {
+    width: 100%; /* Ocupa toda la fila en pantallas pequeñas */
+  }
+}
